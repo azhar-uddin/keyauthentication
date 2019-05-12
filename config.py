@@ -12,7 +12,6 @@ load_dotenv(dotenv_path)
 
 # Application
 DEVELOPER_EMAIL = os.environ.get('DEVELOPER_EMAIL', None)
-LOGGER_LEVEL = os.environ.get('LOGGER_LEVEL', 'INFO')
 SECRET_KEY = os.environ.get('SECRET_KEY','SECRET_KEY')
 APP_NAME = os.environ.get('APP_NAME', 'APP_NAME')
 

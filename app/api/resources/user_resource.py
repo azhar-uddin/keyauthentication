@@ -13,5 +13,4 @@ class UsersResource(Resource):
             user_schema = UserSchema(many=True)
             return{"status": "success", "users":user_schema.dump(users).data}, 200
         except Exception as ex:
-            app.logger.error(ex, exc_info=True)
             return {'status': 'error', 'message': str(ex)}, 100
