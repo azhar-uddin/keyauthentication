@@ -30,6 +30,12 @@ pipenv install package_name=='version'
 cp .env.sample .env
 ```
 Enter respective values for environment variables
+and create the corresponding Database in the Mysql
+
+Create the tables in the Database with the following command:
+```commandline
+flask db upgrade
+```
 
 #### Start Application in Development
 ```commandline
